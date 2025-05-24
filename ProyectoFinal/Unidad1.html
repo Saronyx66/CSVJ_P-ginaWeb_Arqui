@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Unidad2</title>
+    <link rel  = "stylesheet" href = "EstiloU1.css">
+</head>
+<body>
+    <header>
+        <h1> Unidad 1</h1>
+
+        <div class = "contenedorBtn">
+            <a href="Unidad2.html" class="btnUnidad">Unidad 2</a>
+            <a href="Unidad3.html" class="btnUnidad">Unidad 3</a>
+            <a href="Unidad4.html" class="btnUnidad">Unidad 4</a>
+            <a href="Practicas.html" class="btnUnidad">Prácticas</a>
+
+        </div>
+        
+        <a href="Unidad2.html" class="imageSig">
+            <img src = "IMAGENES/flechasig.png" alt ="Siguiente página">
+        </a>
+
+        
+
+    </header>
+
+    <div class ="caja1"> 
+        <h2>1.1 Modelos de arquitectura de cómputo</h2> <br>
+        <p>Son los atributos o reglas que definen el diseño de los componentes que conforman
+            un sistema informático. Abarca desde los circuitos electrónicos hasta los sistemas
+            operativos y las aplicaciones. 
+        </p>
+    </div>
+
+    <div class = "contenedor">
+            <div class = "caja2">
+        <h2>1.1.1 Clásicas</h2><br>
+        <p>Se desarrollaron en las primeras computadoras electromecánicas y de tubos de vacío.
+            Aun son usadas en procesadores empotrados de gama baja y son la base de la mayoría 
+            de las arquitecturas modernas.
+        </p><br>
+
+        <div class = "contenedorCentro">
+            <img src = "IMAGENES/VON NEUMAN.png" alt ="Imagen de referencia">
+        </div>
+
+        <b>Arquitectura Von Neumman</b><br>  
+        <p>
+         Esta arquitectura es la más empleada en la actualidad por su versatilidad.
+         Su organización se distribuye en:
+         <li><b>Unidad de control:</b> encargada de las etapas de captación y descodificación del ciclo 
+            de instrucción.</li>
+        <li><b>
+            Unidad lógico-aritmética o ALU:</b> Se encarga de realizar las operaciones matemáticas y de 
+            lógica que requieren los programas.
+        </li>
+        <li>
+            <b>Memoria:</b> Tiene la tarea de almacenar el programa, la cual la conocemos como memoria RAM.
+        </li>
+        <li>
+            <b>Dispositivo de entrada:</b> Elementos que nos permiten comunicarnos e interactuar con el ordenador.
+        </li>
+        <li> 
+            <b>Dispositivo de Salida:</b> Puntos desde los cuales el ordenador se puede comunicar con nosotros.
+        </li>
+        </p><br>
+
+        <div class = "contenedorCentro">
+            <img src = "IMAGENES/HARVARD.svg" alt ="Imagen de referencia" width = "400px" height = "300px">
+        </div>
+        <b>Arquitectura Harvard</b><br> 
+        <p>
+            La memoria RAM se encuentra dividida en dos, en una parte se almacenan las instrucciones
+             del programa y en la otra memoria los datos.
+        </p>
+    </div>
+
+    <div class = "caja2">
+        <h2>1.1.2 Segmentados</h2>
+        <p>
+            La arquitectura de computadoras segmentadas es un tipo de arquitectura de computadora que se caracteriza 
+            por compartir la memoria central entre dos o más procesadores. 
+        </p>
+        <div class = "contenedorCentro">
+            <img src = "IMAGENES/segmentada.png" alt ="Imagen de referencia" width = "400px" height = "300px">
+        </div>
+    </div>
+
+    <div class = "caja2">
+        <h2>1.1.3 Multiprocesamiento</h2>
+        <p>
+            La arquitectura de multiprocesamiento es un tipo de arquitectura de computadora que utiliza dos o más procesadores para ejecutar programas. El objetivo es reducir 
+            el tiempo de ejecución de los programas y aumentar el rendimiento del sistema.
+        </p>
+        <ol>
+            <li>
+            <b> SISO (Single Instruction, Single Operand )</b> computadoras Monoprocesador 
+            </li>
+            <li><b>SIMO  (Single  Instruction,  Multiple  Operand)</b> procesadores  vectoriales, Exenciones MMX  </li>
+            <li><b>MISO (Multiple Instruction, Single Operand)</b> No implementado</li>
+            <li><b>MIMO (Multiple Instruction, Multiple Operand)</b> sistemas SMP, Clusters, GPUs </li>
+
+            <div class = "contenedorCentro">
+            <img src = "IMAGENES/multiproceso.webp" alt ="Imagen de referencia" width = "400px" height = "300px">
+        </div>
+        </ol>
+        
+    </div>
+    </div>
+
+
+
+    <div class = "caja1">
+        <h2>1.2 Análisis de Arquitecturas </h3>
+        <h3> 1.2.2.1Unidad central de procesamiento</h2>
+        <p>  La CPU es el componente principal que procesa las señales y hace posible la computación. Actúa como el cerebro de cualquier dispositivo de computación. Obtiene instrucciones de la memoria, 
+            realiza las tareas necesarias y envía la salida a la Memoria
+        </p><br>    
+        <div class = "contenedorCentro">
+            <img src = "IMAGENES/CPU.png" alt ="Imagen de referencia" width = "400px" height = "300px">
+        </div>
+
+        <h3> 1.2.2.2 Unidad aritmética lógica </h2>
+            <p> La Unidad Aritmética Lógica (ALU, por sus siglas en inglés) es un componente fundamental de la Unidad Central de Procesamiento (CPU) en las computadoras. Su función principal es realizar operaciones aritméticas, como suma y resta, y operaciones lógicas
+                , como AND, OR, NOT y XOR, entre los valores de los operandos. </p>
+        <h3>1.2.1.3 Registros</h3>
+        <p> un registro es una memoria de alta velocidad y poca capacidad, integrada en el microprocesador, que permite guardar transitoriamente y acceder a valores muy usados,
+             generalmente en operaciones matemáticas.</p>
+
+        <h3>1.2.1.3 Buses</h3>
+        <p> Un bus en arquitectura de computadoras es un canal de comunicación que permite la transferencia de datos entre los distintos componentes de un ordenador. 
+
+        Los buses son importantes para el funcionamiento óptimo de un sistema informático, ya que facilitan la comunicación entre la CPU y la memoria. 
+        </p>
+
+         <div class = "contenedorCentro">
+            <img src = "IMAGENES/alu.webp" alt ="Imagen de referencia" width = "400px" height = "300px">
+        </div>
+    </div>
+
+    <div class = "caja1">
+        <h2> 1.2.2 Memorias</h2>
+        <h2> 1.2.2.1 Conceptos básicos del uso de memoria </h2>
+        <p> Es la organización de los programas y procesos que se ejecutan para aprovechar el espacio
+             de memoria disponible. 
+
+            Utiliza técnicas como la segmentación y la paginación para definir bloques de memoria de tamaño variable. </p>
+    </div>
+
+    <div class = "contenedor">
+        <div class = "caja2"> 
+        <h2> 1.2.2.2 Memoria Principal </h2>
+        <p>La memoria principal, también conocida como memoria primaria, es una memoria volátil que proporciona un rápido almacenamiento y recuperación de datos y almacena temporalmente 
+            los datos que está ejecutando la CPU (unidad central de procesamiento)
+        
+            RAM es la memoria de acceso aleatorio, que es el almacenamiento temporal de la computadora que da a las aplicaciones un lugar para almacenar y acceder a los datos a corto plazo. Tener más RAM significa que se puede acceder a más datos y
+             leerlos casi al instante, en lugar de escribirlos en su unidad de disco duro o SSD. 
+
+            La RAM le permite que su computadora desempeñe la mayoría de las tareas diarias como cargar aplicaciones
+            , navegar en Internet, editar una hoja de cálculo o probar el juego más reciente. La memoria también le permite cambiar rápidamente de una tarea a otra y recordar en qué punto de cada tarea se encuentra. 
+        </p>
+
+         <div class = "contenedorCentro">
+            <img src = "IMAGENES/ram.jpg" alt ="Imagen de referencia" width = "400px" height = "300px">
+        </div>
+    </div>
+
+    <div class = "caja2">
+        <h2>1.2.2.3 Memoria caché</h2>
+        <p>La memoria caché es una memoria auxiliar de alta velocidad que almacena temporalmente datos o instrucciones que se utilizan con frecuencia, con el objetivo de acelerar el acceso a la información y mejorar el rendimiento del sistema.  </p>
+    </div>
+    </div>
+
+    
+
+    <div class ="caja1">
+        <h2>1.2.3 Manejo de la entrada salida</h2>
+        <h3> 1.2.3.1 Módulos de entrada/salida</h3>
+        <p>
+            Son tarjetas electrónicas que permiten la comunicación entre la CPU y los dispositivos externos de una computadora.
+             <ul>
+                <li>Gestionan la transferencia de datos entre la CPU y los dispositivos externos </li>
+                <li>Controlan las funciones de la máquina</li>
+                <li>Gestionan cargas de energía</li>
+                <li>Vinculan diferentes disposittivos entre sí</li>
+             </ul>
+        </p>
+
+         <div class = "contenedorCentro">
+            <img src = "IMAGENES/modulosES.png" alt ="Imagen de referencia" width = "400px" height = "300px">
+        </div>
+
+        <h3> 1.2.3.2 Entrada/salida programada</h3>
+        <p>
+            El procesador le comunica un pedido a la controladora del dispositivo y queda en un busy waiting consultando a la controladora para verificar el estado del pedido.
+
+        Cada vez que la CPU quiere realizar una transferencia: 
+        <ol>
+            <li>
+                Entra en un bucle en el que lee una y otra vez el registro de estado del periférico (encuesta o “polling”) hasta que esté preparado para realizar la preparado para realizar la transferencia 
+            </li>
+            <li>
+                Realiza la transferencia
+            </li>
+        </ol>
+        </p>
+
+        <h3> 1.2.3.3 Entrada/salida mediante interrupciones</h3>
+        <p>
+            Las entradas y salidas por interrupciones son un mecanismo en los sistemas operativos y arquitecturas de computadoras que permite la comunicación eficiente entre el procesador y los dispositivos de entrada/salida (E/S)
+             sin que la CPU tenga que estar constantemente verificando el estado del dispositivo. Detiene temporalmente la ejecución del programa actual, atiende la interrupción ejecutando el código correspondiente (manejador de interrupciones), 
+             y luego reanuda la tarea que estaba haciendo.
+        </p>
+
+        <h3> 1.2.3.4 Acceso directo a la memoria</h3>
+        <p>
+            El acceso directo a memoria (DMA) es una técnica que permite transferir datos entre dispositivos de entrada/salida y la memoria del sistema sin que intervenga el procesador. 
+        </p>
+
+         <div class = "contenedorCentro">
+            <img src = "IMAGENES/DMA.jpg" alt ="Imagen de referencia" width = "400px" height = "300px">
+        </div>
+
+        <h3> 1.2.3.5 Canales y procesadores de entrada/salida</h3>
+        <p>
+            <ol>
+                <li><h4>Canales de entrada/salida</h4> 
+                    Los canales de E/S son subsistemas especializados encargados de gestionar la transferencia de datos entre la memoria principal y los dispositivos de entrada/salida. Se usan para mejorar la eficiencia del sistema y 
+                    liberar a la CPU de tareas repetitivas.
+                </li>
+                <li><h4>Procesadores de entrada/salida</h4>
+                    Los procesadores de E/S son circuitos o chips que manejan directamente las operaciones de entrada y salida sin la intervención constante de la CPU. Funcionan como intermediarios inteligentes que pueden ejecutar 
+                    instrucciones específicas relacionadas con la transferencia de datos.
+                </li>
+            </ol>
+        </p>
+    </div>
+
+    <div class = "caja1">
+        <h2>1.2.4 Buses</h2>
+        <p> Sistema de comunicación que permite la transferencia de datos entre componentes de un ordenador o entre computadoras. </p>
+        <h3>1.2.4.2 Tipos de buses</h3>
+        <ol>
+            <li><h4>Bus de datos</h4>
+                Transporta los datos entre el procesador, la memoria y otros dispositivos.
+                Su ancho (número de líneas) determina la cantidad de datos que se pueden transferir simultáneamente
+                Cuanto mayor sea el ancho, más rápido será el intercambio de información.</li>
+
+            <li><h4>Bus de direcciones</h4>
+                Se usa para especificar la dirección de memoria o del dispositivo de entrada/salida al que el procesador quiere acceder.
+            </li>
+            
+
+            <li><h4>Bus de control</h4>
+                Transporta señales de control para coordinar las operaciones entre los dispositivos conectados.
+Incluye         Líneas como R/W (Read/Write), Clock (Reloj), Interrupt (Interrupción), y otras señales de sincronización.
+            </li>
+        </ol>
+
+         <div class = "contenedorCentro">
+            <img src = "IMAGENES/buses.jpg" alt ="Imagen de referencia" width = "400px" height = "300px">
+        </div>
+
+        <h3>1.2.4.2 Estructura de los buses</h3>
+        <p>
+            La estructura de buses se refiere al sistema de comunicación interno de una computadora o dispositivo digital que permite la transferencia 
+            de datos entre sus componentes. Un bus es un conjunto de líneas de comunicación que pueden transportar datos, direcciones y señales de control.
+        </p>
+
+        <h3>1.2.4.3 Jerarquía de los buses</h3>
+        <p>
+            Los computadores modernos tienen por lo menos 4 buses diferentes (bus interno, bus del procesador, bus del caché, bus de memoria, bus local de E/S, bus estándar de E/S). Se les considera una jerarquía, porque cada bus se conecta al nivel superior a él dentro del computador, integrando así todas las partes del computador. Cada uno es generalmente más lento que el que se encuentra sobre él, siendo el bus del procesador el más rápido tratándose de que este es el dispositivo más rápido del computador. Para mejorar el rendimiento del bus,
+             las jerarquías de buses fueron implementadas cada vez más.
+        </p>
+
+         <div class = "contenedorCentro">
+            <img src = "IMAGENES/jerarquiabuses.png" alt ="Imagen de referencia" width = "400px" height = "300px">
+        </div>
+    </div>
+
+    <div class = "caja1">
+        <h2>1.2.5 Interrupciones</h2>
+        <p>
+            Las interrupciones son señales que alteran el flujo normal de ejecución de instrucciones en un sistema informático, permitiendo que la CPU responda a eventos internos o externos de manera eficiente. Cuando ocurre una interrupción, el procesador detiene temporalmente su actividad actual para atender el evento que la generó, 
+            y luego retoma su tarea original.
+
+            <ol>
+                <li><h4>Interrupciones enmascarables</h4>
+                    Son interrupciones que la CPU puede ignorar si se encuentra en un estado crítico en el que no podrá atender la interrupción, o simplemente ya se encuentra ejecutando una interrupción anterior.
+                </li>
+
+                <li><h4>Interrupciones no enmascarables</h4>
+                    Son interrupciones que no puede ignorar la CPU, siempre tienen que ejecutarse. Se reserva únicamente para eventos críticos y normalmente son preprogramadas por los fabricantes del chipset.
+                </li>
+            </ol>
+        </p>
+    </div>
+
+    <footer>
+            <h3>Arquitectura de computadoras</h3>
+            <p>Claudia Saraí Valdés Jiménez <br> Email: sarivaldes2020@gmail.com<br> Copyright&copy; 2025 - Página creada por Saraí Valdés - Todos los derechos reservados</p>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Unidad 4</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="EstiloU1.css">
+    </head>
+
+    <body>
+        <header>
+        <h1> Unidad 4</h1>
+
+        <div class = "contenedorBtn">
+            <a href="Unidad1.html" class="btnUnidad">Unidad 1</a>
+            <a href="Unidad2.html" class="btnUnidad">Unidad 2</a>
+            <a href="Unidad3.html" class="btnUnidad">Unidad 3</a>
+            <a href="Practicas.html" class="btnUnidad">Prácticas</a>
+
+        </div>
+
+        <a href="Practicas.html" class="imageSig">
+            <img src = "IMAGENES/flechasig.png" alt ="Siguiente página">
+        </a>
+
+
+    </header>
+
+        <div class = "caja1">
+            <h2>4.1 Aspectos básicamos de la computación paralela</h2>
+            <p>
+                La computación paralela es una técnicacomputacional, en la que varias instrucciones se
+                ejecutan en simultaneo para ello se utilizan 2 o más elementos de procesamiento.
+
+                La computación paralela se basa en el principio de que los problemas grandes se pueden dividir en
+                unos más pequeños que luego serán resueltos
+                simultáneamente.
+            </p>
+
+             <div class = "contenedorCentro">
+                <img src = "IMAGENES/parallel.png" alt ="Imagen de referencia" width = "400px" height = "300px">
+            </div>
+        </div>
+
+        <div class = "caja1">
+            <h2>4.2 Tipos de computación paralela</h2>
+            <ol>
+                <li><h4>Paralelismo a nivel bit:</h4> la aceleración en la arquitectura de computadores se lograba en gran 
+                    medida duplicando el tamaño de la palabra en la computadora, la cantidad de información que el 
+                    procesador puede manejar por ciclo. 
+
+                    El aumento del tamaño de la palabra reduce el número de instrucciones que el procesador debe ejecutar 
+                    para realizar una operación en variables cuyos tamaños son mayores que la longitud de la palabra.
+                </li>
+            
+                <li><h4>Paralelismo a nivel de instrucción</h4>
+                Un programa de ordenador es, en esencia, una secuencia de instrucciones ejecutadas por un procesador. 
+                Estas instrucciones pueden reordenarse y combinarse en grupos que luego son ejecutadas en paralelo sin cambiar 
+                el resultado del programa. Esto se conoce como paralelismo a nivel de instrucción.
+                </li>
+
+                <li><h4>Paralelismo de datos</h4>
+                El paralelismo de datos es el paralelismo inherente en programas con ciclos, que se centra en la distribución
+                 de los datos entre los diferentes nodos computacionales que deben tratarse en paralelo. La paralelización 
+                 de ciclos conduce a menudo a secuencias similares de operaciones —no necesariamente idénticas— o funciones 
+                 que se realizan en los elementos de una gran estructura de datos. 
+                </li>
+
+                <li><h4>Paralelismo de tareas: </h4> 
+                El paralelismo de tareas es la característica de un programa paralelo en la que cálculos completamente 
+                diferentes se pueden realizar en cualquier conjunto igual o diferente de datos. Esto contrasta con el 
+                paralelismo de datos, donde se realiza el mismo cálculo en distintos o mismos grupos de datos.
+                </li>
+            </ol>
+
+             <div class = "contenedorCentro">
+                <img src = "IMAGENES/parallelbit.png" alt ="Imagen de referencia" width = "700px" height = "300px">
+            </div>
+        </div>
+
+
+        <div class = "contenedor">
+            <div class ="caja2">
+                <h3>4.2.1 Clasificación</h3>
+                <p>
+                    La clasificación de Flynn ha demostrado funcionar bastante bien para la tipificación de sistemas, y se ha venido usando desde décadas por la mayoría de los arquitectos de computadores. Sin embargo, los avances en tecnología y diferentes topologías, han llevado a sistemas que no son tan fáciles de clasificar dentro de los 4 tipos de Flynn. Por ejemplo, los procesadores vectoriales no encajan adecuadamente en esta clasificación, ni tampoco las arquitecturas hibridas. Para solucionar esto se han propuesto otras clasificaciones, donde los
+                     tipos SIMD y MIMD de Flynn se suelen conservar, pero que sin duda no han tenido el éxito de la de Flynn.
+                </p>
+                 <div class = "contenedorCentro">
+                <img src = "IMAGENES/tiposparalel.gif" alt ="Imagen de referencia" width = "400px" height = "300px">
+            </div>
+            </div>
+
+            <div class = "caja2">
+                <h3>4.2.2 Arquitectura de computadoras secuenciales</h3>
+                <p>
+                    -Es aquella que ejecuta instrucciones una por una, de forma ordenada.<br>
+                    -Solo hay un procesador o un núcleo, que procesa todas las instrucciones del programa.<br>
+                    -Toda la lógica de control sigue una línea recta de ejecución (flujo secuencial).
+                </p>
+                 
+            </div>
+
+            <div class = "caja2">
+                <h2>4.2.3 Organización de direcciones de memoria</h2>
+                <p>
+                    La organización de memoria se refiere a cómo se distribuyen, acceden y gestionan los datos en
+                    memoria cuando múltiples unidades de procesamiento (procesadores, hilos, núcleos) ejecutan tareas simultáneamente.
+                </p>
+
+                 <div class = "contenedorCentro">
+                    <img src = "IMAGENES/dirmem.gif" alt ="Imagen de referencia" width = "400px" height = "300px">
+                </div>
+            </div>
+        </div>
+
+        <div class ="caja1">
+            <h2>4.3 Sistemas de memoria compartida</h2>
+            <p>
+                Todos los hilos/procesadores comparten un mismo espacio de direcciones de memoria.
+
+                Este es el modelo que se usa típicamente en programas multihilo con Java usando Thread, ExecutorService, ForkJoinPool, etc.
+
+                Un multiprocesador puede verse como un computador paralelo compuesto por varios procesadores interconectados que comparten
+                un mismo sistema de memoria. Los sistemas multiprocesadores son arquitecturas MIMD con memoria compartida.
+            </p>
+        </div>
+
+        <div class = "contenedor">
+            <div class = "caja2">
+                <h3> 4.3.1 Redes de interconexión dinámicas o indirectas</h3>
+                <p>
+                    <dl>
+                        <dt><h4>Redes indirectas:</h4></dt>
+                        <dd>Las redes de interconexión indirectas son aquellas en las que los procesadores no están conectados directamente entre sí, sino a través de una serie de conmutadores
+                    intermedios. Estas redes permiten establecer rutas entre múltiples nodos a través de diversos caminos posibles.</dd>
+
+                        <dt><h4> Redes dinámicas:</h4></dt>
+                    <dd> El término "dinámicas" se refiere a la capacidad de estas redes de cambiar las rutas de comunicación entre nodos durante la operación, lo cual permite adaptarse a fallos,
+                    congestión o necesidades específicas del sistema.</dd>
+                    </dl>
+                </p>
+
+                 <div class = "contenedorCentro">
+                    <img src = "IMAGENES/interconexion.jpg" alt ="Imagen de referencia" width = "400px" height = "300px">
+                </div>
+            </div>
+
+            <div class = "caja2">
+                <h3>4.3.2 Redes conmutadas</h3>
+                <p>
+                    Son un tipo de red usada para interconectar varios procesadores o nodos en una arquitectura paralela.
+                    En la arquitectura paralela, los procesadores tienen que comunicarse entre sí para coordinarse y compartir datos.
+                    Esa estructura de comunicación es la red, y cuando es "conmutada", significa que usa interruptores o caminos
+                    dinámicos para dirigir los mensajes hacia donde deben ir.
+
+                    <h4>Algunos tipos: </h4>
+                    <dl>
+                        <dt><h4>Anillo:</h4></dt>
+                        <dd>Cada nodo conectado con 2 vecinos</dd>
+                        <dd>Los datos viajan en una dirección a su destino</dd>
+                        <dt><h4>Malla:</h4></dt>
+                        <dd>Cada nodo conectado en cuadricula</dd>
+                        <dd>Compleja con múltiples caminos</dd>
+                        <dt><h4>Hipercubo:</h4></dt>
+                        <dd>Conexión en cubo tridimensional</dd>
+                        <dd>Eficiente para arquitecturas grandes</dd>
+                    </dl>
+                </p>
+
+                <div class = "contenedorCentro">
+                    <img src = "IMAGENES/conmutada.png" alt ="Imagen de referencia" width = "400px" height = "300px">
+                </div>
+            </div>
+        </div>
+
+        <div class ="caja1">
+            <h2>4.4 Sistemas de memoria construida. Multicomputadoras</h2>
+            <p>
+                Un sistema de memoria distribuida es una arquitectura donde cada procesador (CPU o nodo) tiene su propia memoria local privada, y no hay
+                una memoria compartida centralizada como en los sistemas UMA o NUMA. En lugar de acceder directamente a la
+                memoria de otros procesadores, estos sistemas se comunican a través de mensajes. Por eso, también se les
+                llama sistemas de paso de mensajes.<br>
+
+                Cada nodo tiene CPUs, memoria RAM compartida y un Sistema Operativo.
+            </p>
+            <h3>4.4.1 Redes de interconexión estáticas</h3>
+            <p>
+                Una red de interconexión define cómo los procesadores o nodos están conectados entre sí para comunicarse en sistemas paralelos. En una red
+                estática, la conectividad no cambia durante el tiempo de ejecución: está predefinida en la arquitectura del sistema.
+
+                En lugar de que todos estén conectados a todos (como en una red dinámica), aquí hay un patrón fijo.
+            </p>
+        </div>
+
+        <div class = "caja1">
+            <h2>4.5 Casos de estudio</h2>
+                <p>La computación paralela, que involucra dividir problemas en partes que se resuelven simultáneamente, se aplica en diversos campos. Un ejemplo es el procesamiento de grandes cantidades de datos en tiempo real, como en aplicaciones de aprendizaje
+                    automático o análisis de tráfico de red. También se utiliza para simular fenómenos complejos, como el clima o el flujo de fluidos, donde la capacidad de procesamiento
+                    paralelo es crucial para obtener resultados precisos y rápidos. </p>
+        </div>
+
+        <footer>
+            <h3>Arquitectura de computadoras</h3>
+            <p>Claudia Saraí Valdés Jiménez <br> Email: sarivaldes2020@gmail.com<br> Copyright&copy; 2025 - Página creada por Saraí Valdés - Todos los derechos reservados</p>
+        </footer>
+    </body>
+</html>

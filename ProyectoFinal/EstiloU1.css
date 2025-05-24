@@ -1,0 +1,138 @@
+.caja1{
+    width: 1200px;
+    height: auto;
+    align-items : center;
+    justify-items: center;
+    padding: 20px;
+    margin: auto;
+    background-color:lightgray;
+    display:flex;
+    flex-direction: column;
+    margin-top: 50px;
+    border-radius: 25px;
+
+}
+
+.contenedor{
+    display: flex;
+  justify-content: center;      
+  flex-wrap: wrap;              
+  gap: 20px;                    
+  margin-top: 50px;
+}
+
+.caja2{
+    width: 400px;
+    height: auto;
+    align-items : center;
+    justify-items: center;
+    padding: 20px;
+    background-color: lightgray;
+    display:flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 25px;
+}
+.contenedorCentro{
+     display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+p, h3, h4, dt, dd, li{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  background-image: url("IMAGENES/fondo.jpg");
+}
+
+header {
+    background-color: #421010;
+    color: white;
+    padding: 20px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.btnUnidad {
+  padding: 10px 20px;
+  background-color: #d6d0cf;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration:none;
+}
+
+.btnUnidad:hover {
+  background-color: #888888;
+  color:white;
+  text-decoration:none;
+}
+.btnUnidad:active {
+  background-color: #505050;
+  color:white;
+}
+
+
+.contenedorBtn{
+     display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+
+.imageSig{
+  bottom: 20px;
+  right: 20px;
+  transition: transform 0.3s ease;
+    position: absolute;
+}
+
+.imageSig img {
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+}
+
+.imageSig:hover {
+  transform: scale(1.1);
+}
+
+.imagePrev{
+  bottom: 20px;
+  right: 20px;
+  transition: transform 0.3s ease;
+    position: absolute;
+}
+
+.imagePrev img {
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+}
+
+.imagePrev:hover {
+  transform: scale(1.1);
+}
+
+footer{
+    background-color: #421010;
+    color: white;
+    padding: 20px;
+    position: relative;
+    border-radius: 15px;
+}

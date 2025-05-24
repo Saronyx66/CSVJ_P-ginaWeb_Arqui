@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Unidad 3</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="EstiloU1.css">
+</head>
+
+<body>
+
+    <header>
+        <h1> Unidad 3</h1>
+
+        <div class = "contenedorBtn">
+            <a href="Unidad1.html" class="btnUnidad">Unidad 1</a>
+            <a href="Unidad2.html" class="btnUnidad">Unidad 2</a>
+            <a href="Unidad4.html" class="btnUnidad">Unidad 4</a>
+            <a href="Practicas.html" class="btnUnidad">Prácticas</a>
+
+        </div>
+        
+        <a href="Unidad4.html" class="imageSig">
+            <img src = "IMAGENES/flechasig.png" alt ="Siguiente página">
+        </a>
+
+        
+
+    </header>
+
+    <div class="caja1">
+        <h2>3.1 Chipset</h2>
+        <p>
+            Conjunto de componentes electrónicos integrados en la placa madre de un dispositivo electrónico.
+            Controla el flujo de datos enre el procesador, la memoria y los diferentes periféricos en un ordenador.
+        </p>
+
+    </div>
+
+    <div class="contenedor">
+        <div class="caja2">
+            <h2>3.1.1 Unidad Central de Procesamiento (CPU) </h2>
+            <p>
+                Es un componente de hardware y la unidad computacional central de un servidor. Convierten los datos en
+                señales digitales
+                y realizan operaciones matemáticas en ellos. Obtiene instrucciones de la memoria, hace tareas necesarias
+                y manda la salida a la memoria.
+
+                Conformado por:
+            <dl>
+                <dt>
+                    <h4>Unidad de control:</h4>
+                </dt>
+                <dd>Dirige el tráfico de información entre los registros de la CPU y conecta con la ALU las
+                    instrucciones extraídas de la memoria.</dd>
+
+                <dt>
+                    <h4>Unidad aritmético lógica:</h4>
+                </dt>
+                <dd>Realiza operaciones aritméticas y lógicas</dd>
+
+                <dt>
+                    <h4>Registros: </h4>No accesibles (de instrucción, de bus de datos y bus de dirección) y accesibles
+                    de uso específico
+                    (contador programa, puntero pila, acumulador, flags, etc.) o de uso general.
+                </dt>
+            </dl>
+            </p>
+             <div class = "contenedorCentro">
+            <img src = "IMAGENES/CPU.png" alt ="Imagen de referencia" width = "400px" height = "300px">
+                </div>
+        </div>
+
+        <div class="caja2">
+            <h2>3.1.2 Controlador del bus</h2>
+            <p>
+                Es un componente de software encargado de enumerar los dispositivos que están conectados a un bus. Se
+                encarga
+                de administrar los dispositvos y realizar operaciones en su nombre.
+            </p>
+
+            <h4>Tipos:</h4>
+            <dl>
+                <dt>
+                    <h4>De función: </h4>
+                </dt>
+                <dd> controlador principal de un dispositivo</dd>
+
+                <dt>
+                    <h4>De filtro de nivel inferior: </h4>
+                </dt>
+                <dd>modifica el comportamiento del hardware en el dispositivo</dd>
+
+                <dt>
+                    <h4>De filtro de nivel superior: </h4>
+                </dt>
+                <dd>proporciona características de valor añadido para un dispositivo</dd>
+            </dl>
+
+             <div class = "contenedorCentro">
+                <img src = "IMAGENES/controladoresbus.jpg" alt ="Imagen de referencia" width = "400px" height = "300px">
+            </div>
+        </div>
+
+        <div class="caja2">
+            <h2>3.1.3 Puertos de entrada/salida</h2>
+            <p> Interfaces físicas y lógicas que permiten la comunicación entre los componentes de una computadora
+                y el extrerior. Transfieren datos, controlan periféricos, deciden la prioridad de éstos y tienen
+                protocolos de comunicación entre dispositivos de distintas compatibilidades.
+
+            <h4>Tipos: </h4>
+            <ol>
+                <li>PCI express</li>
+                <li>Memoria Ram</li>
+                <li>SATA</li>
+                <li>USB</li>
+                <li>Ethernet</li>
+            </ol>
+            </p>
+
+            <div class = "contenedorCentro">
+                <img src = "IMAGENES/es.jpg" alt ="Imagen de referencia" width = "400px" height = "300px">
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <div class="caja2">
+            <h2>3.1.4 Controlador de interrupciones:</h2>
+            <p>
+                Las interrupciones surgen de las necesidades que tienen los dispositivos
+                periféricos de enviar información al procesador principal de un sistema de computación. La primera
+                técnica que se empleó fue que el propio
+                procesador se encargara de sondear el dispositivo cada cierto tiempo para averiguar si tenía pendiente
+                alguna comunicación para él. Este método
+                presentaba el inconveniente de ser muy ineficiente, ya que el procesador constantemente consumía tiempo
+                en realizar todas las instrucciones de sondeo.
+            </p>
+
+             <div class = "contenedorCentro">
+                <img src = "IMAGENES/controlInterrupcion.jpg" alt ="Imagen de referencia" width = "400px" height = "300px">
+            </div>
+        </div>
+
+        <div class = "caja2">
+            <h2>3.1.5 Controlador de acceso directo a la memoria (DMA)</h2>
+            <p> El DMA o acceso directo a la memoria es una técnica que permite a dispositivos transferir
+                datos directamente a la memoria sin pasar por la CPU, mejorando la velocidad y eficiencia del sistema, 
+                evitando cuellos de votella y mejorando la eficiencia del sistema. Se usa en tareas de alta demanda como
+                videojuegos o aplicaciones pesadas.
+
+                Cuando un periférico pide transferir datos, el controlador toma el control del bus del sistema y los Transfieren
+                a la memoria. Recibe instrucciones sobre qué y cuánto transferir y le avisa a la CPU para que continúe su trabajo
+            </p>
+             <div class = "contenedorCentro">
+                <img src = "IMAGENES/DMA.jpg" alt ="Imagen de referencia" width = "400px" height = "300px">
+            </div>
+        </div>
+        
+        <div class = "caja2">
+            <h2>3.1.6 Circuitos de temporización</h2>
+            <p>Un temporizador básicamente consiste en un elemento que se activa o desactiva después de un tiempo más o menos 
+            preestablecido. De esta manera podemos determinar el parámetro relacionado con el tiempo que ha de transcurrir para que el circuito susceptible de 
+            temporizarse, se detenga o empiece a funcionar o simplemente cierre un contacto o lo abra.  
+        
+            Se encuentra en la placa base de la PC y que es capaz de mantener una cuenta de tiempo basada en el reloj de la computadora. Puede usarse para calcular
+             el intervalo entre dos mediciones de tiempo o para generar pausas. Este chip tiene la capacidad de realizar diferentes funciones de conteo. Es útil para medir el tiempo que dura cierto proceso o para mantener actualizadas la hora del día y la fecha si se deja la PC conectada y encendida.
+            </p>
+             <div class = "contenedorCentro">
+                <img src = "IMAGENES/tempo.jpg" alt ="Imagen de referencia" width = "400px" height = "300px">
+            </div>
+        </div>
+    </div>
+
+    <div class = "contenedor">
+        <div class = "caja2">
+            <h2>3.1.7 Circuitos de control</h2>
+            <p> Se encargan de dirigir y coordinar todas las operaciones que ocurren dentro del sistema. Se asegura
+                de que cada componente trabaje en el momento adecuado y haga lo correcto.
+
+                Se encuentran en la Unidad de Control del procesador y trabajan con el ALU, los registros, los buses 
+                de datos y direcciones y con la memoria. 
+            </p>
+        </div>
+
+        <div class = "caja2">
+            <h2>3.1.8 Controladores de video</h2>
+            <p>
+                La tarjeta de video, (también llamada controlador de video), es un componente electrónico requerido para generar una 
+                señal de video que se manda a una pantalla de video por medio de un cable. La tarjeta de video se encuentra normalmente
+                 en la placa de sistema de la computadora o en una placa de expansión. La tarjeta gráfica reúne toda la información que
+                  debe visualizarse en pantalla y actúa como interfaz entre el procesador y el monitor; la información es enviada a éste
+                   por la placa luego de haberla recibido a través del sistema de buses. Una tarjeta gráfica se compone, básicamente, 
+                   de un controlador de video, de la memoria de pantalla o RAM video, y el generador de caracteres, y en la actualidad 
+                   también poseen un acelerador de gráficos. El controlador de video va leyendo a intervalos la información almacenada
+                    en la RAM video y la transfiere al monitor en forma de señal de video; el número de veces por segundo que el 
+                    contenido de la RAM video es leído y transmitido al monitor en forma de señal de video se conoce como frecuencia de
+                     refresco de la pantalla.
+            </p>
+
+             <div class = "contenedorCentro">
+                <img src = "IMAGENES/controlvideo.jpg" alt ="Imagen de referencia" width = "400px" height = "300px">
+            </div>
+        </div>
+    </div>
+
+    <div class = "caja1">
+        <h2>3.2 Aplicaciones </h2>
+        <h3> 3.2.1 Entrada/salida </h3>
+        <p> Permite la comunicación entre el procesador y el usuario, dispositivos y redes</p>
+        <dl>
+            <dt><h4>Entrada: </h4></dt>
+            <dd>Son los dispositivos y mecanismos que permiten introducir instrucciones a la computadora</dd>
+
+            <dt><h4>Salida: </h4></dt>
+            <dd>Son los dispositivos que reciben los resultados procesador por la computadora y los presentan al usuario</dd>
+
+            <dt><h4>E/S mixta:</h4></dt>
+            <dd>Algunos dispositivos funcionan tanto como entrada como salida</dd>
+        </dl>
+         <div class = "contenedorCentro">
+                <img src = "IMAGENES/dispoes.webp" alt ="Imagen de referencia" width = "400px" height = "300px">
+            </div>
+    </div>
+
+    <div class = "caja1">
+        <h2>3.2.2 Almacenamiento </h2>
+        <p>Permite guardar datos e instrucciones, temporal y permanentemente</p>
+        <h4>Tipos:</h4>
+
+        <ul>
+            <li><h4>RAM:</h4> Almacena datos e instrucciones temporalmente mientras la computadora está encendida. Volátil. </li>
+            <li><h4>ROM:</h4> Contiene solo instrucciones permanentes esenciales para el ararnque del sistema</li>
+            <li><h4>Discos duros HDD y Unidades de Estado Solido SSD: </h4> Perminen guardar archivos, programas y OS permanentemente</li>
+            <li><h4>Dispositivos USB: </h4> Usados para almacenamiento externo, respaldo y transferencia de datos</li>
+        </ul>
+
+         <div class = "contenedorCentro">
+                <img src = "IMAGENES/tiposalmacenamiento.jpg" alt ="Imagen de referencia" width = "400px" height = "300px">
+            </div>
+    </div>
+
+    <div class = "caja1"> 
+        <h2>3.2.3 Fuentes de alimentación</h2>
+        <p>Convierte la energía eléctrica de la red doméstica en energía utilizable por los componentes internos. Convierte 
+            voltaje, lo regula y distribuye la energía.
+        </p>
+
+         <div class = "contenedorCentro">
+                <img src = "IMAGENES/fuentespoder.jpg" alt ="Imagen de referencia" width = "400px" height = "300px">
+            </div>
+    </div>
+
+    <div class = "caja1">
+        <h3>3.3 Ambientes de servicio</h3>
+        <p>
+            El negocio de proveer servicios de datos es mucho más complejo que la forma en la que se dan los tradicionales servicios, 
+            que con frecuencia se terminan involucrando o necesitando la colaboración de terceras empresas.
+        </p>
+
+        <ul>
+            <li>Desarrollo de nuevos mercados y productos</li>
+            <li>Adquisición y administración de clientes</li>
+            <li>Proveer y desarrollar servicios para la red</li>
+            <li>Administración del negocio</li>
+        </ul>
+    </div>
+
+    <div class = "contenedor">
+        <div class = "caja2">
+            <h2>3.3.1 Negocios</h2>
+            <p> Definitivamente, la tecnología en general ha sido la causa principal y la acción más directa para la 
+                transformación del trabajo de las organizaciones en la posguerra del siglo XX. Tanto los bienes de capital 
+                «duros» (computadores, teléfonos, videos, facsímiles, grabadoras, etc.), como los programas y sistemas de
+                 información y comunicación en general, han incrementado enormemente la productividad y eficiencia de las 
+                 organizaciones. Tenemos como ejemplos los siguientes: bases de datos en redes de todo orden y topología, 
+                 sistemas de reservaciones en aerolíneas, sistemas de contabilidad y nóminas, archivos clínicos en centros 
+                 de salud, sistemas de conmutación electrónica y un sin número de otras aplicaciones a procesos 
+                 administrativos.
+            </p>
+             <div class = "contenedorCentro">
+                <img src = "IMAGENES/negocio.jpg" alt ="Imagen de referencia" width = "400px" height = "300px">
+            </div>
+
+        </div>
+
+        <div class = "caja2">
+            <h2>3.3.2 Industria</h2>
+            <p>
+                La industrialización de los servicios de tecnología de información va a redefinir el mercado en términos 
+                de como las organizaciones evalúan, compran y seleccionan los servicios y como los vendedores desarrollan 
+                y establecen precios de los servicios. Para lograr esta estandarización, se requiere un enfoque hacia las 
+                soluciones genéricas y esto debe ser responsabilidad de los proveedores, que deben de desarrollar, operar 
+                y administrar el resultado de estos genéricos de TI.  Aunque los servicios de TI están en proceso de madurez,
+                 la madurez de la industria se ha incrementado en aspectos evidentes, como la forma en que los servicios son
+                  implementados y administrados.
+            </p>
+             <div class = "contenedorCentro">
+                <img src = "IMAGENES/industria.jpg" alt ="Imagen de referencia" width = "400px" height = "300px">
+            </div>
+        </div>
+
+        <div class = "caja2">
+            <h2>3.3.3 Comercio electrónico</h2>
+            <p>
+                El desarrollo de estas tecnologías y de las telecomunicaciones ha hecho que los intercambios de datos crezcan
+                 a niveles extraordinarios, simplificándose cada vez más y creando nuevas formas de comercio, y en este marco
+                  se desarrolla el Comercio Electrónico. Se considera “Comercio Electrónico” al conjunto de aquellas 
+                  transacciones comerciales y financieras realizadas a través del procesamiento y la transmisión de 
+                  información, incluyendo texto, sonido e imagen.
+            </p>
+             <div class = "contenedorCentro">
+                <img src = "IMAGENES/comercio.webp" alt ="Imagen de referencia" width = "400px" height = "300px">
+            </div>
+
+        </div>
+    </div>
+    <footer>
+            <h3>Arquitectura de computadoras</h3>
+            <p>Claudia Saraí Valdés Jiménez <br> Email: sarivaldes2020@gmail.com<br> Copyright&copy; 2025 - Página creada por Saraí Valdés - Todos los derechos reservados</p>
+        </footer>
+</body>
+
+</html>

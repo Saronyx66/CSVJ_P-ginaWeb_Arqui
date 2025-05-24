@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Unidad 2</title>
+        <meta charset="UTF-8" />
+        <link rel  = "stylesheet" href = "EstiloU1.css">
+    </head>
+    <body>
+        <header>
+        <h1> Unidad 2</h1>
+
+        <div class = "contenedorBtn">
+            <a href="Unidad1.html" class="btnUnidad">Unidad 1</a>
+            <a href="Unidad3.html" class="btnUnidad">Unidad 3</a>
+            <a href="Unidad4.html" class="btnUnidad">Unidad 4</a>
+            <a href="Practicas.html" class="btnUnidad">Prácticas</a>
+
+        </div>
+        
+        <a href="Unidad3.html" class="imageSig">
+            <img src = "IMAGENES/flechasig.png" alt ="Siguiente página">
+        </a>
+
+
+    </header>
+
+        <div class = "caja1">
+            <h2>2.1 Organización del procesador</h2>
+            <p> La Unidad de Procesamiento (CPU) controla el funcionamiento del computador y lleva a cabo sus funciones de procesamiento de datos. Frecuentemente se le llama procesador. Un procesador, incluye tanto registros visibles por el usuario como registros de control/estado. Los registros visibles por el usuario pueden ser de uso general o tener una utilidad especial, mientras que los registros de control y estado se usan para controlar el funcionamiento del procesador, un claro ejemplo es el contador de programa. Lleva a cabo una gran variedad de Cálculos Comparaciones numéricas Transferencias de datos como respuesta a las peticiones
+                 de los programas que están siendo ejecutados en memoria.</p>
+        </div>
+
+        <div class = "caja1">
+            <h2> 2.2 Estructura de registros</h2>
+            <h3>2.2.1 Registros visibles para el usuaio</h3>
+            <p>
+                Los registros visibles para el usuario son aquellos que pueden ser accedidos directamente por los
+                programadores para manipular datos y direcciones.
+
+                Tipos:
+                <ul>
+                    <li><h4> Registros de datos: </h4> Almacenan valores numéricos para operaciones </li>
+                    <li><h4>Registro de direcciones: </h4> Contienen direcciones de memoria</li>
+                    <li><h4>Registros de propósito general: </h4> Usados para diferentes tareas según la necesidad del programa</li>
+                    <li><h4>Registros de condición: </h4> Guardan información sobre el resultado de una operación</li>
+                </ul>
+            </p>
+
+             <div class = "contenedorCentro">
+            <img src = "IMAGENES/registrosvisibles.png" alt ="Imagen de referencia" width = "400px" height = "300px">
+        </div>
+
+            <h3>2.2.2 Registros de control y de estados </h3>
+            <p>
+                Estos registros son utilizados por la CPU para gestionar su operación y supervisar el estado del
+                sistema. Son esenciales para el control interno del
+                procesador, ya que almacenan información sobre la ejecución de instrucciones, posibles errores y condiciones específicas del hardware. Gracias a estos
+                registros, la CPU puede tomar decisiones sobre su funcionamiento y garantizar que los procesos se
+                realicen de manera estable y segura.
+            </p>
+
+            <h3>2.2.3 Ejemplos de registros de CPU reales</h3>
+            <p>
+                <ul>
+                    <li><h4>Registros de propósito general: </h4> para almcanenar datos temporales y variables en operaciones</li>
+                    <li><h4>Registros de propósito específico: </h4> Incluyen el contador de programa que guarda la dirección de la siguiente
+                    instrucción y el registro de instrucción que almacena la instrucción en ejecución</li>
+                    <li><h4>Registros de estado y control: </h4> como el registro de banderas que almacena información sobre el estado del procesador</li>
+                    <li><h4>Registros de punto flotante: </h4> usados para cálculos matemáticos avanzados </li>
+                </ul>
+
+                 <div class = "contenedorCentro">
+                    <img src = "IMAGENES/registrosgen.png" alt ="Imagen de referencia" width = "400px" height = "300px">
+                </div>
+
+                <ol>
+                    <li><h4>Arquitectura RISC-V</h4>
+                        <li>
+                            Usa 32 registros de propósito general donde x0 siempre es 0
+                        </li>
+                        <li>Tiene registros especiales como el PC y el CSR</li>
+                        <li>Es ampliamente usada en sistemas embedidos y computación de alto rendimiento</li>
+                    </li>
+
+
+                    <li><h4>Arquitectura PowerPC (IBM)</h4>
+                        <li>Usa 32 registros de propósito general para operaciones enteras</li>
+                        <li>Tiene 32 registros de punto flotante </li>
+                        <li>Incluye registros especiales como el LR para llamadas a subrutinas y CTR para bucles</li>
+                    </li>
+                </ol>
+            </p>
+
+
+        </div>
+
+        <div class = "caja1">
+            <h2>2.3 El ciclo de instrucción</h2>
+            <p> El ciclo de instrucción es el proceso mediante el cual la CPU ejecuta instrucciones, dividido en tres etapas principales:
+            </p>
+
+            <ol>
+                <li><h4>Fetch (Búsqueda): </h4> Se obtiene la instrucción desde la memoria y se almacena en el IR</li>
+                <li><h4>Decode (Decodificación): </h4> Se interpreta la instrucción y se determinan los registros y operaciones necesarias</li>
+                <li><h4>Execute (Ejecución): </h4> Se realizan las operaciones y se almacenan los resultados</li>
+            </ol>
+
+             <div class = "contenedorCentro">
+                <img src = "IMAGENES/catchfetch.png" alt ="Imagen de referencia" width = "400px" height = "300px">
+             </div>
+            
+            <h3>2.3.1 Ciclo Fetch-Decode-Execute</h3>
+            <p>El Ciclo de Instrucción (Fetch-Decode-Execute) es el proceso fundamental mediante el cual una CPU ejecuta instrucciones de un programa.</p>
+            <dl>
+                <dt>Fetch</dt>
+                <dd>El procesador obtiene la instrucción desde la memoria RAM.</dd>
+                <dd>La dirección de la instrucción se encuentra en el contador de programa (PC, Program Counter).</dd>
+                <dd>La instrucción se almacena en el Registro de Instrucción (IR, Instruction Register).</dd>
+
+                <dt>Decode</dt>
+                <dd>La CPU interpreta la instrucción para determinar qué operación realizar y qué operandos necesita.</dd>
+                <dd>Se activa la Unidad de Control para coordinar el proceso.</dd>
+
+                <dt>Execute</dt>
+                <dd>Si es una operación aritmética/lógica, se usa la ALU (Unidad Aritmética y Lógica).</dd>
+                <dd>Si implica memoria, se accede a los datos en RAM.</dd>
+                <dd>Si es una instrucción de control, el flujo del programa cambia (saltos, llamadas a funciones). </dd>
+                <dd>Los resultados pueden almacenarse en registros o en la memoria. </dd>
+            </dl>
+  
+        </div>
+
+        
+
+        <div class = "contenedor">
+            <div class = "caja2">
+            <h2>2.3.2 Segmentación de instrucciones</h2>
+            <p>La segmentación de instrucciones es una técnica que permite implementar el paralelismo a nivel de instrucción en un único procesador.
+            </p>
+
+            <h4>Técnica pipeline</h4>
+            <p>Esta compuesto por una lista de segmentos y secuenciales en donde cada segmento lleva acabo una tarea o un grupo
+                de tareas computacionales.</p>
+
+                 <div class = "contenedorCentro">
+                    <img src = "IMAGENES/pipeline.png" alt ="Imagen de referencia" width = "400px" height = "300px">
+                </div>
+
+            </div>
+
+            <div class = "caja2">
+            <h2>2.3.3 Conjunto de instrucciones: Características y funciones</h2>
+            <p>
+                El conjunto de instrucciones es elconjunto de comandos e instrucciones que un procesador puede ejecutar. Define cómo el software interactúa con el hardware, especificando las operaciones que el procesador puede realizar, los tipos de datos
+                soportados y el formato de las instrucciones
+            </p>
+            <dl>
+                <dt><h4>RISC </h4></dt>
+                <dd>Instrucciones simples y rápidas</dd>
+                <dd>Menos modos de direccionamiento</dd>
+                <dd>Arquitecturas ARM, MIPS</dd>
+
+                <dt><h4>CISC</h4></dt>
+                <dd>Instrucciones más complejas y variadas</dd>
+                <dd>Mayor uso de memoria y modos de direccionamiento</dd>
+            </dl>
+
+             <div class = "contenedorCentro">
+                <img src = "IMAGENES/risccisc.jpg" alt ="Imagen de referencia" width = "400px" height = "300px">
+            </div>
+
+        </div>
+        </div>
+        
+        <div class = "caja1">
+            <h2>2.4 Casos de estudio de CPU reales</h2>
+            <p>
+                En informática, los modos de direccionamiento son las diferentes maneras de especificar un operando dentro de una instrucción en lenguaje ensamblador. 
+                Un modo de direccionamiento especifica la forma de calcular la dirección de memoria efectiva de un operando mediante el uso de la información contenida en
+                 registros y/o constantes, contenida dentro de una instrucción de la máquina o en otra parte. No existe una forma generalmente aceptada de nombrar a los 
+                 distintos modos de direccionamiento. En particular, los distintos autores y fabricantes de equipos pueden dar nombres diferentes para el modo de hacer 
+                 frente al mismo, o los mismos nombres, a los diferentes modos de direccionamiento. Además, un modo de direccionamiento que en una determinada arquitectura 
+                 se trata como un modo de direccionamiento, puede representar la funcionalidad que en otra arquitectura está cubierto por dos o más modos de direccionamiento.
+            </p>
+             <div class = "contenedorCentro">
+                <img src = "IMAGENES/real.jpg" alt ="Imagen de referencia" width = "400px" height = "300px">
+            </div>
+
+        </div>
+        <footer>
+            <h3>Arquitectura de computadoras</h3>
+            <p>Claudia Saraí Valdés Jiménez <br> Email: sarivaldes2020@gmail.com<br> Copyright&copy; 2025 - Página creada por Saraí Valdés - Todos los derechos reservados</p>
+        </footer>
+    </body>
+</html>
